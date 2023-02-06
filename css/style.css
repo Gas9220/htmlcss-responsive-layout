@@ -14,10 +14,14 @@ Common
 
 :root {
     --primary-blue: #0084FD;
-  }
+}
 
 .flex {
     display: flex;
+}
+
+.container {
+    flex-wrap: wrap;
 }
 
 .j-between {
@@ -35,6 +39,11 @@ nav {
 
 nav ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*
@@ -56,18 +65,24 @@ header i {
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: inherit;
     margin-left: 1.25rem;
+}
+
+.links-style {
+    padding: .625rem .9375rem;
+    border-radius: 500px;
 }
 
 .link-primary-style {
     background-color: white;
     color: black;
-    padding: .625rem .9375rem;
-    border-radius: 20%/50%
+
 }
 
+.link-secondary-style {
+    background-color: var(--primary-blue);
+    color: white;
+}
 
 @media screen and (min-width: 992px) {
     nav {
@@ -77,4 +92,49 @@ header nav ul li a {
     header .burger-menu {
         display: none;
     }
+}
+
+/*
+Main
+*/
+
+/* Features Section */
+
+.features-section .container {
+    margin-top: 2.5rem;
+}
+
+.features-section .container .col {
+    width: 100%;
+    background-color: #B5DDFF;
+    border-radius: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.features-section .container .col .feature-description > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.features-section .container h2 {
+    color: var(--primary-blue);
+}
+
+.feature-screenshot img {
+    width: 80%;
+}
+
+.feature-screenshot {
+    width: 100%;
+    justify-content: center;
+}
+
+.feature-description {
+    width: 100%;
+    padding: 1.25rem;
+}
+
+.feature-description a {
+    text-align: center;
+    display: block;
+    width: 50%;
 }
