@@ -6,15 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /CSS -->
+
     <title>Responsive Layout</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header></header>
+    <header class="flex j-between padding-lr-30">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Nav -->
+        <nav>
+            <ul class="flex">
+                <li>
+                    <a href="#">Planning</a>
+                </li>
+                <li>
+                    <a href="#">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#">Features</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#" class="link-primary-style">Get Started</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Nav -->
+    </header>
     <!-- /Header -->
 
     <!-- Main -->
