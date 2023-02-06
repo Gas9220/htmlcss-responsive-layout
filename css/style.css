@@ -14,6 +14,7 @@ Common
 
 :root {
     --primary-blue: #0084FD;
+    --primary-violet: #9792E4;
 }
 
 .flex {
@@ -48,6 +49,10 @@ nav ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h2 {
+    margin: 2rem 0;
 }
 
 /*
@@ -168,13 +173,13 @@ Main
         width: calc(100% / 3 - 1.25rem);
     }
 
-    .container > .col:first-child {
+    .container>.col:first-child {
         width: calc(100% / 3 * 2 - 1.25rem);
     }
 }
 
 @media screen and (min-width: 992px) {
-    .container > .col:first-child {
+    .container>.col:first-child {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
@@ -183,7 +188,7 @@ Main
         width: 40%;
         align-items: end;
     }
-    
+
     .feature-description {
         width: 60%;
     }
@@ -194,5 +199,69 @@ Main
 
     .feature-description a {
         max-width: 40%;
+    }
+}
+
+/* Planning Section */
+
+.planning-section {
+    background-color: var(--primary-violet);
+}
+
+.planning-section .container {
+    padding: 3rem;
+}
+
+.planning-section .container .left-col img,
+.planning-section .container .right-col img {
+    width: 100%;
+}
+
+.left-col {
+    color: white;
+    margin-bottom: 1.875rem;
+}
+
+.left-col h2 {
+    color: white;
+}
+
+.right-col {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.50rem;
+}
+
+.right-col i {
+    font-size: 1.875rem;
+    padding: 1.25rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    background-color: var(--primary-violet);
+}
+
+@media screen and (min-width: 992px) {
+    .planning-section .container {
+        max-width: 880px;
+        flex-wrap: nowrap;
+        align-items: end;
+        gap: 1.875rem;
+    }
+
+    .left-col {
+        width: 60%;
+    }
+
+    .right-col {
+        width: 40%;
+    }
+
+    .planning-section .container .right-col img {
+        width: 50%;
+    }
+
+    .left-col {
+        margin-bottom: 0
     }
 }
